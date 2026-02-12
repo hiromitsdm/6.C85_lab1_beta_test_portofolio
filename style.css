@@ -1,6 +1,11 @@
 body {
-       background-color: red;
-       padding: 10em;
+    font: 100%/1.5 system-ui;
+    max-width: 100ch;
+    margin-inline: 10% 10%;
+    writing-mode: horizontal-tb;
+    padding: 2em; /* or try 1em, 20px, etc. */
+    background-color: #182bbf; /* Now you'll see the padding! */
+
 }
 
 p {
