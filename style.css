@@ -1,9 +1,9 @@
 body {
-    font: 100%/1.5 system-ui; /* 100% font size, 1.5 line height, system font. Same as in lab 1 */
-    max-width: 100ch; /* Limits width to 50 rems for better readability */
+    font: 100%/1.5 system-ui;
+    max-width: 100ch;
     margin-inline: 10% 10%;
     writing-mode: horizontal-tb;
-    padding: 1000ch;
+    padding: 2em; /* or try 1em, 20px, etc. */
 }
 
 p {
