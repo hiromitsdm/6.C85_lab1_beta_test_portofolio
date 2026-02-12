@@ -4,6 +4,8 @@ body {
     margin-inline: 10% 10%;
     writing-mode: horizontal-tb;
     padding: 1000ch; /* or try 1em, 20px, etc. */
+    background-color: #f0f0f0; /* Now you'll see the padding! */
+
 }
 
 p {
