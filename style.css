@@ -3,7 +3,7 @@ body {
     max-width: 100ch;
     margin-inline: 10% 10%;
     writing-mode: horizontal-tb;
-    padding: 10em; /* or try 1em, 20px, etc. */
+    padding: 1em; /* or try 1em, 20px, etc. */
 }
 
 p {
