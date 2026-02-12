@@ -6,3 +6,7 @@ body {
     /* Add here margin-inline */
     /* Add here padding around the body */
 }
+
+p {
+    margin-bottom: 2em;
+}
