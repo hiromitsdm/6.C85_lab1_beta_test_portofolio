@@ -39,3 +39,7 @@ nav a:hover {
 p {
     margin-bottom: 2em;
 }
+
+input, textarea, button {
+    font: inherit; /* Inherit font properties from parent elements */
+}
