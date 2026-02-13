@@ -1,9 +1,15 @@
+:root {
+    --color-accent: oklch(29.162% 0.17862 270.899);
+}
+
 body {
     font: 100%/1.5 system-ui;
     max-width: 100ch;
     margin-inline: 5% 5%;
     writing-mode: horizontal-tb;
-    padding: 1em; 
+    padding: 1em;
+    accent-color: var(--color-accent); /* Apply accent color to form elements, checkboxes, etc. */
+ 
 }
 
 nav a.current {
