@@ -43,3 +43,19 @@ p {
 input, textarea, button {
     font: inherit; /* Inherit font properties from parent elements */
 }
+
+/* Make labels and form controls behave like block elements (insert line breaks) */
+label, input, textarea, button {
+    display: block;
+}
+
+/* Make form controls take up full width of container */
+input, textarea {
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the 100% width */
+}
+
+/* Add spacing above and below labels */
+label {
+    margin-block: 1em; /* Adds margin to top and bottom */
+}
