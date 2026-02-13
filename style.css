@@ -44,18 +44,50 @@ input, textarea, button {
     font: inherit; /* Inherit font properties from parent elements */
 }
 
-/* Make labels and form controls behave like block elements (insert line breaks) */
-label, input, textarea, button {
-    display: block;
+/* Step 3.3: Grid layout for forms */
+form {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Label column (auto-sized) + input column (flexible) */
+    gap: 1em; /* Add spacing between rows and columns */
 }
 
-/* Make form controls take up full width of container */
-input, textarea {
-    width: 100%;
-    box-sizing: border-box; /* Include padding and border in the 100% width */
-}
-
-/* Add spacing above and below labels */
+/* Make labels span both columns and use subgrid */
 label {
-    margin-block: 1em; /* Adds margin to top and bottom */
+    display: grid;
+    grid-column: 1 / -1; /* Span from first column to last column (entire row) */
+    grid-template-columns: subgrid; /* Inherit parent's 2-column grid structure */
+}
+
+/* Make submit button span both columns too */
+button {
+    grid-column: 1 / -1; /* Span entire row */
+}
+
+img {
+    max-width: 100%;
+}
+
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
+    gap : 2rem;
+}
+
+.projects article {
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+
+.projects article h2 {
+    margin: 0;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.1;
+    text-wrap: balance;
 }
