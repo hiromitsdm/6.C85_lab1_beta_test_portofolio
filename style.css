@@ -13,6 +13,8 @@ nav a.current {
 
 nav {
     display: flex;
+    margin-bottom: 2em; /* Separate navigation from content below */
+    border-bottom: 1px solid oklch(80% 3% 200); /* Subtle border under entire nav bar */
 }
 
 nav a {
