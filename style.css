@@ -91,3 +91,117 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.1;
     text-wrap: balance;
 }
+
+/* CV Page Specific Styles - Only affects pages with <section> elements */
+
+/* Header - Name and Contact (only on CV page with sections) */
+body:has(section) > h1 {
+    margin-bottom: 0.2em;
+    font-size: 300%;
+}
+
+body:has(section) > p {
+    margin-top: 0;
+    margin-bottom: 2em;
+    font-size: 95%;
+}
+
+/* Section Headings */
+section > h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 110%;
+    border-bottom: 1px solid #000;
+    margin-top: 2em;
+    margin-bottom: 0.8em;
+    padding-bottom: 0.2em;
+}
+
+/* Experience/Education Articles */
+section > article {
+    margin-bottom: 1.2em;
+}
+
+/* Article Headers - Company/School and Location on same line */
+section article > header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.2em;
+}
+
+section article > header h3 {
+    font-weight: bold;
+    margin: 0;
+    font-size: 105%;
+}
+
+section article > header > div {
+    flex: 1;
+}
+
+section article > header > div > p {
+    margin: 0;
+    font-size: 95%;
+}
+
+section article > header > p {
+    margin: 0;
+    font-style: italic;
+    text-align: right;
+    white-space: nowrap;
+    margin-left: 1em;
+}
+
+/* Position line - Job title and dates on same line */
+.position-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 0.3em;
+}
+
+.position-line p {
+    margin: 0;
+}
+
+.position-line p:first-child {
+    flex: 1;
+    padding-right: 1em;
+}
+
+.position-line p:last-child {
+    white-space: nowrap;
+}
+
+/* Multiple roles at same company */
+.role {
+    margin-bottom: 0.8em;
+}
+
+/* Lists within CV sections only */
+section article ul {
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    padding-left: 1.8em;
+}
+
+section article li {
+    margin-bottom: 0.25em;
+    line-height: 1.4;
+}
+
+/* Additional Information section */
+section:last-of-type ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+section:last-of-type li {
+    margin-bottom: 0.4em;
+}
+
+/* Remove excessive spacing from h2 in additional info */
+section:last-of-type h2 {
+    margin-bottom: 0.5em;
+}
