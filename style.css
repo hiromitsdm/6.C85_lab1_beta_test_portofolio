@@ -31,6 +31,11 @@ nav a {
     padding: 0.5em; /* Add spacing */
 }
 
+nav a:hover {
+    border-bottom: 0.4em solid var(--color-accent); /* Use accent color on hover */
+    padding-bottom: 0.1em; /* Reduce padding to counter border height */
+}
+
 p {
     margin-bottom: 2em;
 }
