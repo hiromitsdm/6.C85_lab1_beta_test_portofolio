@@ -6,6 +6,13 @@ body {
     padding: 1em; 
 }
 
+nav a.current {
+    font-weight: bold;
+    color: #333;
+    text-decoration: underline;
+    /* or whatever styling you prefer */
+}
+
 nav {
     display: flex;
 }
