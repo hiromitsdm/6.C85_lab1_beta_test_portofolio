@@ -5,7 +5,7 @@
 body {
     font: 100%/1.5 system-ui;
     max-width: 100ch;
-    margin-inline: 5% 5%;
+    margin-inline: auto;
     writing-mode: horizontal-tb;
     padding: 1em;
     accent-color: var(--color-accent); /* Apply accent color to form elements, checkboxes, etc. */
