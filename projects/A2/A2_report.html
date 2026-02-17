@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Vis & Society Assignment 2</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<header>
+		<h1>
+			<small>Assignment 2</small>
+			Exploratory Data Analysis
+		</h1>
+
+		<p>
+			<strong>Hiroki Ogasawara</strong> — <em>hoga@mit.edu</em>
+		</p>
+	</header>
+	<main>
+		<section>
+			<h2>Subtheme: Zoning and House Supply</h2>
+
+			<h3>Overall Analysis Questions</h3>
+			<ol>
+				<li>Which areas in the Greater Boston region should we emphasize upzone more and building more houses to improve house supply for low income households?</li>
+				[Motivation]Boston faces housing supply and affordability challenges<sup id="cite1"><a href="#ref1" class="citation">[1]</a></sup>.
+				Upzoning and building more houses is a key element to increase house supply but where should we prioritize it? We want to identify areas where these actions would have the biggest impact on house supply.</li>
+				<li>Is there still aftereffect of restrictive zoning?</li>
+				[Motivation] Zoning laws had contributed to racial segregation and inequality in the past, according to the background reading<sup id="cite2"><a href="#ref2" class="citation">[2]</a></sup>.
+				We want to investigate whether there is still a prolonged aftereffect of restrictive zoning on minority populations.</li>
+				<li>Is housing supply met for low income/minority households as well in areas with better educational ranking?</li>
+				[Motivation] Educational ranking is one of the key factors that people consider when choosing where to live.
+				My relatives moved to an area with better educational ranking for their children, but they found the housing supply was very limited.
+				This makes me wonder if housing supply is met for low income/minority households in areas with better educational ranking.
+				</li>
+
+			</ol>
+		</section>
+
+		<section>
+			<h2>Discoveries & Insights</h2>
+			<h4>First Analysis Question:</h4>
+			<h3>Which areas in the Greater Boston region should we emphasize upzone more and building more houses to improve house supply for low income households?</h3>
+
+			<p>In order to answer this question, we break it down into the following sub-questions:</p>
+			<ol>
+     			<li>What is the distribution of households in each area around Boston?</li>
+				<li>What is the distribution of low income households in each area?</li>
+				<li>Which areas should we focus upzoning from single family only zoning?</li>
+			</ol>
+			<figure>
+				<img src="Fig 1.png" alt="" />
+				<figcaption>
+				Household Distribution in Each Area Around Boston.
+				<p>[Caption] Both the size of the circle and the color thickness represent the number of household along with actual number of households in each area.</p>
+				</figcaption>
+			</figure>
+			<p>Figure 1 shows the household distribution in each area around Boston.
+			As we can see, there are several areas with high number of households, such as Highham, Randolph, Quincy, Brookline, Walpolem and Norwood.
+			These areas may have a relatively high demand for housing, which could indicate a need for upzoning or building more houses to meet the demand.
+			</p>
+			<p>As the article<sup id="cite3"><a href="#ref3" class="citation">[3]</a></sup> indicates, zoning laws have contributed to the housing shortage for especially low income households.
+			 Let us explore the distribution of low income households and zoning geography so we can obtain more insights on the areas where we should prioritize upzoning or building more houses.</p>
+
+			<figure>
+				<img src="Fig 2.png" alt="" />
+				<figcaption>
+				Income distribution of Massachusetts in 2014.
+				</figcaption>
+			</figure>
+			In order to determine the low income households, we initially used the provided dataset.
+			However, as you can see in Figure 2, each income category has a range of the income and we don't know the exact income distribution in each category.
+			Thus, we use the public data of median household income in Massachusetts in 2014 and it was $69,160<sup id="cite4"><a href="#ref4" class="citation">[4]</a></sup>.
+			The low income is defined as households with income less than 80% of the Massachuttes median income in 2014. (i.e., $55,328 or less).
+			We use this threshold to determine the low income households in the dataset and explore the distribution of low income households in each area around Boston.
+
+			<figure>
+				<img src="Fig 3.png" alt="" />
+				<figcaption>
+				Household Distribution with Zoning Type and Low Income Households Percentage.
+				<p>
+				[Caption] The size of the circle represents the number of households, the color of the circles represents the zone type, and the percentage indicates ratio of low income households to total households in each area.
+				The zoning type is categorized into two types: single family only zone, other housing zonings, for example, multi-family zone.
+				The label is annotated on the cities that have Single-Family Only Zoning in the figure, since we want to focus on the areas with Single-Family Only Zoning for the analysis of this question.
+				</p>
+				</figcaption>
+			</figure>
+			<p>
+			Figure 3 shows the distribution of households with zoning type and low income households percentage.
+			In order to get insignts on the question, better visual enhancement is added in Figure 4, where the circles with low income percentage less than 25% are grayed out.
+			</p>
+			<figure>
+				<img src="Fig 4.png" alt="" />
+				<figcaption>
+				Household Distribution with Zoning Type and Low Income Households Percentage (Grayed out if the low income percentage is less than 25 % ).
+				</figcaption>
+			</figure>
+			<p>
+			This figure indicates that areas with single-family only zoning, such as Nahant, Swampscott, Melrose, Norwood, and Arlington(orange circle is behind the blue circle), should be prioritized for upzoning or building more houses as the top five candidates to increase housing supply and meet the needs of low income households.
+			</p>
+			<p>
+			In this series of analysis, we determined the area we should emphasize upzone more and building more houses based on the vizualization of the distribution of households with zoning type and low income households percentage.
+			</p>
+
+
+
+			<h4>Second Analysis Question:</h4>
+			<h3>Is there still aftereffect of restrictive zoning?</h3>
+
+			<p>As the article<sup id="cite3-2"><a href="#ref3" class="citation">[3]</a></sup> indicates in the comic,
+			people of color (or minority) were unable to purchase a single-family house since the housing price was strategially set too high.
+			As a result of this, they were concentrated in the areas with other housing zonings, such as multi-family zone, which are more affordable than single-family houses.
+			This anecdotal evidence makes me wonder if there is still aftereffect of restrictive zoning on minority populatioin.
+			In this analysis, we compare restrictive zonings (i.e., Single-Family Only Zoning) and non-restrictive zonings (i.e., Other Housing Zoning) within each area
+			to understand if there is aftereffect of restrictive zoning.
+			</p>
+
+
+			<p>The following approaches are taken to discover the original question:</p>
+			<ol>
+				<li>Which areas have both zonings of single-family only and other housings?</li>
+				<li>What is the distribution of minority population in each zone in the area?</li>
+				<li>Is the minority concentrated in non-restrictive zonings?</li>
+			</ol>
+			Firstly, let us identify areas with both zonings of single-family only and other housings.
+			One thing we should mention here is that a zone (either Single-Family Only Zoning or Other Housing Zoning) in some area did not have population information in provided dataset.
+			We omitted those areas in the following analysis, which may cause some bias in the analysis.
+			Additionally, we also omitted areas with only one zoning type, since our primary focus is to compare the population distribution of minority between restrictive and non-restrictive zonings within each area.
+
+			<figure>
+				<img src="Fig 5.png" alt="" />
+				<figcaption>
+				Areas with Both Zoning Types of Single-Family Only and Other Housing.
+				<p>
+				[Caption] The green circles represent the areas with both zoning types of single-family only and other housing, while the gray circles represent the areas with only one zoning type (either Single-Family Only Zoning or Other Housing Zoning).
+				</p>
+				</figcaption>
+			</figure>
+
+			Figure 5 shows the areas with both zoning types of single-family only and other housing, indicating 45 areas have both zoning types and 54 areas have only one zoning type.
+
+			<p>Secondly, let us understand population distribution of BIMPOC living in each zoning (i.e., Single-Family Only Zoning vs. Other Housing Zoning) in the 45 area we determined.
+			BIMPOC stands for Black, Indigenous, and People of Color. In this analysis, we define BIMPOC as the population excluding white population.
+			</p>
+
+			<figure>
+				<img src="Fig 6.png" alt="" />
+				<figcaption>
+				Percentage of BIMPOC Population in Each Area.
+				<p>
+				[Caption] The percentage under the city name is BIMPOC population ratio in each area and each zone.
+				The color of the circles represents the zoning type (i.e., Single-Family Only Zoning vs. Other Housing Zonings).
+				</p>
+				</figcaption>
+			</figure>
+			<p>
+			Let us empahasize the area where the percentage of BIMPOC population in Other Housing Zoning is higher than that in Single-Family Only Zoning to get clearer insights.
+			</p>
+			<figure>
+				<img src="Fig 7.png" alt="" />
+				<figcaption>
+				Areas where BIMPOC Population Percentage is Higher in Other Housing Zoning than in Single-Family Only Zoning.
+				</figcaption>
+			</figure>
+			<p>
+			Figure 7 highlights the areas where the percentage of BIMPOC population in Other Housing Zoning is higher than that in Single-Family Only Zoning,
+			indicating that there are 21 areas out of 45 areas where the percentage of BIMPOC population is higher in Other Housing Zoning than in Single-Family Only Zoning.
+			</p>
+			<p>
+			This analysis suggests that there may be a less aftereffect of restrictive zoning on minority population,
+			since the number of areas where the percentage of BIMPOC population is higher than in Single-Family Only Zoning is less than half of the areas with both zoning types.
+			However, it is important to note that this analysis does not necessarily indicate that there is no aftereffect of restrictive zoning on minority population,
+			due to the fact that we omitted some data in the analysis by the nature of the dataset, which may cause some bias in the analysis.
+			</p>
+
+			<h4>Third Analysis Question:</h4>
+			<h3>Is housing supply met for low income/minority households as well in areas with better educational ranking?</h3>
+
+			<p>In order to answer this question, we break it down into the following sub-questions:</p>
+			<ol>
+     			<li>Which areas are recognized to serve better education?</li>
+				<li>What is the distribution of low income/minority households in the areas with better educational ranking? Are there any correlaion?</li>
+			</ol>
+			To start with, let us identify areas with better educational ranking. The educational ranking is obtained from the public data, which is based on the Niche's ranking of school districts in Massachusetts in 2026<sup id="cite5"><a href="#ref5" class="citation">[5]</a></sup>.
+			This information is combined with the dataset to undertand the distribution of low income/minority households in the areas with educational ranking.
+			<figure>
+				<img src="Fig 8.png" alt="" />
+				<figcaption>
+				Scatter Plot of Income v.s. Educational Ranking.
+				</figcaption>
+				<p>
+				[Caption] The vertical axis represents the educational ranking from top 1 to 234 and the horizontal axis represents income. We could not find the educational ranking for some areas, which are omitted in the figure.
+				The size of the circles represents the number of households in each area and in each income category.
+				The color of the circles represents a percentage of BIMPOC population in each area, which is calculated by dividing the number of BIMPOC population by the total population in each area.
+				The dataset was reorganized by Tableau Prep to create a pivot table with the number of households in each area and in each income category.
+				</p>
+			</figure>
+			<p>
+			As we can see in Figure 8, when we zoom in low income category (i.e., $55,328 or less. The low income line is indicated by a horizontal line in the figure), we can see slightly bigger circles below 90 ranking compared to those above 90 ranking, although the difference is not significant.
+			On the other hand, when we look at the high income category (i.e., $200 or more), we can see a clear cluster of bigger circles above around 19 ranking compared to those lower ranking.
+			Additionally, the area where BIMPOC population percentage is the highest (i.e., Randolph. Education rank is 191th) is in the low educational ranking area, which may indicate that there is a correlation between educational ranking and percentage of BIMPOC population.
+			However, this is just one example of the area and we can see another area with high percentage of BIMPOC population (i.e., Acton. Education rank is 17th) in the high educational ranking area, which may indicate that there is no correlation between educational ranking and percentage of BIMPOC population.
+			</p>
+		</section>
+
+		<section>
+			<h2>Summary</h2>
+			<h4>
+			Question 1 — Where to prioritize upzoning for low-income households?
+			</h4>
+			<p>
+			We found out that areas with single-family only zoning and high concentrations of low-income households should be prioritized. The top five candidates identified were Nahant, Swampscott, Melrose, Norwood, and Arlington — all areas have both single-family only zoning restrictions and over 25% low-income household ratios.
+			</p>
+			<h4>
+			Question 2 — Are there lingering aftereffects of restrictive zoning?
+			</h4>
+			<p>
+			The mixed evidence is indicated. In only 21 of 45 areas (less than half) did BIMPOC populations concentrate more heavily in non-restrictive (other housing) zones compared to single-family zones, which suggests the aftereffect of historically exclusionary zoning may be diminishing, though data omissions limit the strength of that conclusion.
+			</p>
+			<h4>
+			Question 3 — Is housing supply equitable in high-ranking school districts?
+			</h4>
+			<p>
+			There's a tentative pattern suggesting higher-ranked school districts skew toward high-income households, with slightly larger low-income household clusters appearing in areas ranked below the 90th. Randolph (ranked 191st) had the highest BIMPOC percentage, while Acton (ranked 17th) was an outlier with high BIMPOC representation, making a definitive correlation inconclusive.
+			</p>
+			<h4>
+			Overall takeaway:
+			</h4>
+			<p>
+			Zoning type, income level, and school district quality are interconnected factors that together shape housing affordability in Greater Boston. There are even more factors that complicate the situation, such as the availability of public transportation and housing prices. It's challenging to figure out the whole story - we should tackle it with systems thinking.
+			</p>
+		</section>
+
+		<section>
+			<h2>References</h2>
+			<ol class="references">
+				<li id="ref1">
+					<a href="#cite1" class="back-ref">↑</a>
+					Bipartisan Policy Center. "A Snapshot of Housing Supply and Affordability Challenges in Boston."
+					<a href="https://bipartisanpolicy.org/report/housing-supply-affordability-challenges-boston/#:~:text=Background,substantially%20over%20the%20same%20period." target="_blank">https://bipartisanpolicy.org/report/housing-supply-affordability-challenges-boston</a>
+				</li>
+				<li id="ref2">
+					<a href="#cite2" class="back-ref">↑</a>
+					Boston Fair Housing. "1970s–Present: Restriction of Multi-Family Zoning."
+					<a href="https://www.bostonfairhousing.org/timeline/1970s-present-Local-Land_use-Regulations-2.html" target="_blank">https://www.bostonfairhousing.org/timeline/1970s-present-Local-Land_use-Regulations-2.html</a>
+				</li>
+				<li id="ref3">
+					<a href="#cite3" class="back-ref">↑</a>
+					The Washington Post. "Houses are too expensive. Apartments are too small. Is this a fix?"
+					<a href="https://www.washingtonpost.com/dc-md-va/2023/10/20/missing-middle-housing-comic/" target="_blank">https://www.washingtonpost.com/dc-md-va/2023/10/20/missing-middle-housing-comic/</a>
+				</li>
+				<li id="ref4">
+					<a href="#cite4" class="back-ref">↑</a>
+					Wikipedia. "List of U.S. states and territories by income - States ranked by median household income."
+					<a href="https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_income#:~:text=Table_title:%20States%20ranked%20by%20median%20household%20income,%7C%202023:%20$99%2C781%20%7C%202014:%20$71%2C919%20%7C" target="_blank">https://en.wikipedia.org/wiki/List_of_U.S._states_and_territories_by_income</a>
+				</li>
+				<li id="ref5">
+					<a href="#cite5" class="back-ref">↑</a>
+					Niche. "2026 Best School Districts in Massachusetts"
+					<a href="https://www.niche.com/k12/search/best-school-districts/s/massachusetts/" target="_blank">https://www.niche.com/k12/search/best-school-districts/s/massachusetts/</a>
+				</li>
+			</ol>
+		</section>
+	</main>
+</body>
+</html>
