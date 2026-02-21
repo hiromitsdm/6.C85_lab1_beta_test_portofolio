@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<title>Vis & Society Assignment 3</title>
-	<link rel="stylesheet" href="https://vis-society.github.io/assignments/report.css" />
+	<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
@@ -25,9 +25,9 @@
 				<img src="https://vis-society.github.io/assets/imgs/covid-spiral.png" alt="" />
 			</figure>
 
-			<p>
+			<h3>
 				Insights about the data/visualization:
-			</p>
+			</h3>
 
 			<ul>
 				<li>New COVID-19 cases consistently declined during spring and summer months (April through August), suggesting a recurring seasonal pattern of reduced transmission during warmer periods.</li>
@@ -35,12 +35,15 @@
 				<li>Case counts follow a broadly sinusoidal pattern across all three years, cycling between seasonal peaks and troughs — though the amplitude of each wave varies considerably, with each successive winter surge growing larger than the last.</li>
 			</ul>
 
-			<p>
+			<h3>
 				Design Critique:
-			</p>
+			</h3>
 
 			<p>
-				DESCRIBE YOUR CRITIQUE IN 1-2 PARAGRAPHS.
+				This spiral visualization succeeds first and foremost as an attention-grabbing design — its unconventional form immediately distinguishes it from standard line or bar charts, inviting the viewer to engage more closely. Aside from the appearance, the spiral structure shows data well: by aligning the same calendar months radially across years, enabling intuitive comparisons of both seasonal trends and year-over-year magnitude. If the intended message is that the January 2022 Omicron wave represented an unprecedented cases, the design communicates this effectively — the dramatically steeper outward trajectory of the 2022 curve is visually unmistakable compared to prior years. That said, the same unconventional form that draws the eye also creates an initial moment of disorientation; a general audience encountering this chart for the first time may spend considerable effort simply decoding the structure before extracting any insight.
+			</p>
+			<p>
+				The design could be strengthened in a few targeted ways. Most notably, quantitative comparison is hindered by the absence of radial gridlines or axis markers at each month position — the single scale reference tucked in the upper-left corner is easy to overlook and provides no common datum against which to compare widths at different points along the spiral. Readers are left estimating magnitudes rather than reading them. Similarly, only four month labels (January, April, July, October) are provided, requiring the viewer to mentally interpolate the remaining months — a small but unnecessary cognitive burden that interrupts the reading experience.
 			</p>
 		</section>
 
@@ -48,7 +51,7 @@
 			<h2>Visualization Sketches</h2>
 
       <figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Fig 1.jpg" alt="" />
 				<figcaption>
           BRIEF CAPTION HERE.
 				</figcaption>
@@ -57,15 +60,31 @@
 			<p>
 				Design Rationale for Sketch 1:
 			</p>
-
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>
+					<strong>Motivation:</strong>
+					The spiral's lack of a common datum and unfamiliar reading direction were its biggest weaknesses, so I wanted to explore the simplest possible fix — a conventional timeline that any audience could read immediately.
+				</li>
+				<li>
+					<strong>Hoped to communicate:</strong> 
+					The full arc of cases from January 2020 through early 2022 in a single continuous view, with magnitude directly readable against a zero baseline.
+				</li>
+				<li>
+					<strong>What worked: </strong> 
+					The shared horizontal axis and explicit month labels completely eliminate the interpolation burden the spiral imposed. Year-over-year comparisons at the same month are possible via color coding.
+				</li>
+				<li>
+					<strong>What didn't work: </strong> 
+					 Comparing the same month across years still requires significant horizontal eye movement, creating cognitive load. The design is also visually plain — it loses the attention-grabbing quality that made the spiral distinctive.
+				</li>
+				<li>
+					<strong>To explore next:  </strong> 
+					 Whether a more creative visual form can retain the readability gains while recovering some visual appeal and making same-month comparisons more spatially intuitive.
+				</li>
 			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Fig 2.jpg" alt="" />
 				<figcaption>
           BRIEF CAPTION HERE.
 				</figcaption>
@@ -76,13 +95,30 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>
+					<strong>Motivation:</strong>
+					Inspired by the idea that the best visualizations connect form to content — I wanted a design whose shape immediately signals the subject matter, solving the spiral's initial disorientation problem through recognition rather than novelty.
+				</li>
+				<li>
+					<strong>Hoped to communicate:</strong>
+					Annual case totals and monthly patterns in a form that feels thematically resonant, with the virus structure itself serving as the visual encoding.
+				</li>
+				<li>
+					<strong>What worked:</strong>
+					The spike motifs make the topic unmistakable at a glance. Labeling all months inside each circle and displaying total annual cases at the center gives the audience meaningful anchors without requiring axis literacy.
+				</li>
+				<li>
+					<strong>What didn't:</strong>
+					Without a shared spatial axis across the three circles, comparing the same month between years remains guesswork. Each circle is its own isolated coordinate system, which partially recreates the spiral's comparison problem.
+				</li>
+				<li>
+					<strong>To explore next:</strong>
+					How to introduce a common reference axis across years while keeping the visual engagement — leading naturally toward a more structured, multi-year comparative form.
+				</li>
 			</ul>
 
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Fig 3.jpg" alt="" />
 				<figcaption>
           BRIEF CAPTION HERE.
 				</figcaption>
@@ -93,9 +129,26 @@
 			</p>
 
 			<ul>
-				<li>RATIONALE 1</li>
-				<li>RATIONALE 2</li>
-				<li>RATIONALE 3</li>
+				<li>
+					<strong>Motivation:</strong>
+					After two sketches that struggled with quantitative precision, I wanted to prioritize accurate, unambiguous comparison above all else — the grouped bar chart is the most direct solution to the spiral's missing axis problem.
+				</li>
+				<li>
+					<strong>Hoped to communicate:</strong>
+					Exact monthly case counts across all three years simultaneously, with a zero baseline that makes magnitude differences immediately readable and comparable.
+				</li>
+				<li>
+					<strong>What worked:</strong>
+					The shared vertical axis fully resolves the quantitative legibility problem. Distinct year colors let the audience locate any specific year-month combination quickly, and the labeled x-axis removes all interpolation burden.
+				</li>
+				<li>
+					<strong>What didn't:</strong>
+					Three bars per month across twelve months produces a visually dense and somewhat overwhelming figure. The constantly alternating color pattern across the full width creates perceptual fatigue and reduces the clarity it was designed to achieve.
+				</li>
+				<li>
+					<strong>To explore next:</strong>
+					Ways to reduce visual clutter — potentially through small multiples, a cleaner color palette, or filtering to highlight only the most meaningful comparisons — while preserving the quantitative rigor this sketch introduced.
+				</li>
 			</ul>
 		</section>
 
@@ -103,7 +156,7 @@
 			<h2>Final Visualization Design</h2>
       
 			<figure>
-				<img src="IMAGE_FILENAME" alt="" />
+				<img src="Fig 4.png" alt="" />
 				<figcaption>
           BRIEF CAPTION HERE.
 				</figcaption>
@@ -115,14 +168,23 @@
 			<h2>Final Writeup</h2>
 
 			<p>
-        DESCRIBE YOUR RATIONALE TO JUSTIFY THE DECISIONS FOR YOUR FINAL DESIGN.
-				WHAT ARE YOU TRYING TO CONVEY, AND HOW DOES YOUR DESIGN FACILITATE THIS?
-      </p>
+        	The central message of this final design is to communicate the monthly trend of new COVID-19 cases across three years in a way that is both readable and visually cohesive. 
+			Earlier iterations revealed that high visual contrast between year colors created perceptual fatigue, so the final palette was deliberately chosen to be harmonious — each year's area fill is distinct but equally weighted, ensuring no single year dominates the viewer's attention before they have read the chart. 
+			Rather than placing the legend in a box outside of the figure that forces the eye to travel away from the data, year labels are embedded directly within their corresponding areas, positioned left to right to mirror the natural flow of time along the horizontal axis — an intentional alignment between spatial arrangement and temporal meaning. 
+			The color of each inline label matches its area fill, reinforcing the mapping intuitively without requiring the viewer to cross-reference a separate legend. 
+			A 3-year monthly average line is overlaid in a neutral gray so as not to compete with the area colors, giving the audience a reference curve that reveals the recurring seasonal pattern — a dip in spring and a surge in winter — without introducing visual noise. 
+			The y-axis with a common zero datum and the fully labeled month x-axis improve the readability problems identified in the critique. With the final design, readers can measure magnitudes accurately and locate any month without estimation. 
+			The primary limitation of this design is that the overlapping area form, while functionally effective, may still feel overwhelming and conventional to some audiences — sacrificing the visual intrigue of the original spiral in exchange for interpretive clarity.
+	        </p>
 
 			<p>
-        REFLECT ON HOW YOUR FINAL DESIGN DOES OR DOES NOT ADDRESS YOUR ORIGINAL CRITIQUE.
-				WHAT TENSIONS OR TRADEOFFS DID YOU ENCOUNTER? WHAT DID NOT WORK OUT AS ANTICIPATED?
-      </p>
+			This final design directly addresses the two core weaknesses identified in the critique of the original spiral visualization: the absence of a common datum and the insufficient month labeling. 
+			By grounding all three years on a shared zero baseline with a fully labeled horizontal axis, the design eliminates the estimation burden the spiral imposed — readers no longer need to judge radial widths against a single tucked-away scale reference. 
+			Reading the article by Fernanda Viégas and Martin Wattenberg on design and redesign clarified that effective critique requires understanding the original designer's context, goals, and constraints before proposing alternatives. 
+			The New York Times spiral was almost certainly optimized to capture attention and convey the shock of the Omicron surge — objectives it achieves powerfully. Our redesigned figure is prioritized for a different goal: accurate monthly comparison across years and their trend. This direction entails trade-offs. 
+			The spiral visualization, easily catching the audience's eyes, is not used here in favor of legibility. The process of redesign also reinforced that no single visualization is universally superior — each design makes choices that illuminate certain aspects of the data while inevitably downplaying others. 
+			Articulating a clear primary message before making any design decision proved to be the most valuable discipline throughout this assignment, as it provided a consistent criterion against which every choice — color, label placement, chart type, axis range — could be evaluated and justified.
+	        </p>
 		</section>
 	</main>
 </body>
