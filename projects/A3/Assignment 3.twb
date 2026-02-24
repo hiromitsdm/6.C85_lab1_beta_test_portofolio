@@ -506,7 +506,7 @@
             <run bold='true' fontalignment='1'>New COVID-19 Cases, United States</run>
             <run fontalignment='1'>Æ&#10;</run>
             <run bold='true' fontalignment='1'>- </run>
-            <run fontalignment='1' fontcolor='#000000' fontname='Benton Sans Book'>How Cases Rise and Fall Each Year</run>
+            <run bold='true' fontalignment='1' fontcolor='#000000'>How Cases Rise and Fall Each Year</run>
             <run bold='true' fontalignment='1'> - </run>
           </formatted-text>
         </title>
