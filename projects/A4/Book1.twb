@@ -1,0 +1,2258 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.26.0109.0333                               -->
+<workbook original-version='18.1' source-build='2025.3.2 (20253.26.0109.0333)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='economy-and-growth' inline='true' name='federated.1kfaei81wahhe215cybph1actj5o' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='economy-and-growth' name='textscan.10as75c1jx39fa1cki7ra1rtiuli'>
+            <connection class='textscan' directory='/Users/hirokiogasawara/Desktop/World-Bank-Data-by-Indicators-master/economy-and-growth' filename='economy-and-growth.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.10as75c1jx39fa1cki7ra1rtiuli' name='economy-and-growth.csv' table='[economy-and-growth#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+            <column datatype='string' name='Country Name' ordinal='0' />
+            <column datatype='string' name='Country Code' ordinal='1' />
+            <column datatype='integer' name='Year' ordinal='2' />
+            <column datatype='real' name='average_value_DEC alternative conversion factor (LCU per US$)' ordinal='3' />
+            <column datatype='real' name='average_value_Discrepancy in expenditure estimate of GDP (current LCU)' ordinal='4' />
+            <column datatype='real' name='average_value_GDP (constant 2010 US$)' ordinal='5' />
+            <column datatype='real' name='average_value_GDP (constant LCU)' ordinal='6' />
+            <column datatype='real' name='average_value_GDP (current LCU)' ordinal='7' />
+            <column datatype='real' name='average_value_GDP (current US$)' ordinal='8' />
+            <column datatype='real' name='average_value_GDP deflator (base year varies by country)' ordinal='9' />
+            <column datatype='real' name='average_value_GDP growth (annual %)' ordinal='10' />
+            <column datatype='real' name='average_value_GDP per capita (constant 2010 US$)' ordinal='11' />
+            <column datatype='real' name='average_value_GDP per capita (constant LCU)' ordinal='12' />
+            <column datatype='real' name='average_value_GDP per capita (current LCU)' ordinal='13' />
+            <column datatype='real' name='average_value_GDP per capita (current US$)' ordinal='14' />
+            <column datatype='real' name='average_value_GDP per capita growth (annual %)' ordinal='15' />
+            <column datatype='real' name='average_value_GDP per capita, PPP (constant 2017 international $)' ordinal='16' />
+            <column datatype='real' name='average_value_GDP per capita, PPP (current international $)' ordinal='17' />
+            <column datatype='real' name='average_value_GDP, PPP (constant 2017 international $)' ordinal='18' />
+            <column datatype='real' name='average_value_GDP, PPP (current international $)' ordinal='19' />
+            <column datatype='real' name='average_value_GDP: linked series (current LCU)' ordinal='20' />
+            <column datatype='real' name='average_value_GNI (constant 2010 US$)' ordinal='21' />
+            <column datatype='real' name='average_value_GNI (current LCU)' ordinal='22' />
+            <column datatype='real' name='average_value_GNI (current US$)' ordinal='23' />
+            <column datatype='real' name='average_value_GNI per capita (constant 2010 US$)' ordinal='24' />
+            <column datatype='real' name='average_value_GNI per capita (current LCU)' ordinal='25' />
+            <column datatype='real' name='average_value_GNI per capita, Atlas method (current US$)' ordinal='26' />
+            <column datatype='real' name='average_value_GNI per capita, PPP (constant 2017 international $)' ordinal='27' />
+            <column datatype='real' name='average_value_GNI per capita, PPP (current international $)' ordinal='28' />
+            <column datatype='real' name='average_value_GNI, Atlas method (current US$)' ordinal='29' />
+            <column datatype='real' name='average_value_GNI, PPP (constant 2017 international $)' ordinal='30' />
+            <column datatype='real' name='average_value_GNI, PPP (current international $)' ordinal='31' />
+            <column datatype='real' name='average_value_GNI: linked series (current LCU)' ordinal='32' />
+            <column datatype='real' name='average_value_Gross domestic savings (% of GDP)' ordinal='33' />
+            <column datatype='real' name='average_value_Gross domestic savings (current LCU)' ordinal='34' />
+            <column datatype='real' name='average_value_Gross domestic savings (current US$)' ordinal='35' />
+            <column datatype='real' name='average_value_Gross savings (% of GDP)' ordinal='36' />
+            <column datatype='real' name='average_value_Gross savings (% of GNI)' ordinal='37' />
+            <column datatype='real' name='average_value_Gross savings (current LCU)' ordinal='38' />
+            <column datatype='real' name='average_value_Gross savings (current US$)' ordinal='39' />
+            <column datatype='real' name='average_value_Gross value added at basic prices (GVA) (constant LCU)' ordinal='40' />
+            <column datatype='real' name='average_value_Gross value added at basic prices (GVA) (current LCU)' ordinal='41' />
+            <column datatype='real' name='average_value_Gross value added at basic prices (GVA) (current US$)' ordinal='42' />
+            <column datatype='real' name='average_value_Net primary income (Net income from abroad) (current LCU)' ordinal='43' />
+            <column datatype='real' name='average_value_Net primary income (Net income from abroad) (current US$)' ordinal='44' />
+            <column datatype='real' name='average_value_Net secondary income (Net current transfers from abroad) (current LCU)' ordinal='45' />
+            <column datatype='real' name='average_value_Net secondary income (Net current transfers from abroad) (current US$)' ordinal='46' />
+            <column datatype='real' name='average_value_PPP conversion factor, GDP (LCU per international $)' ordinal='47' />
+            <column datatype='real' name='average_value_PPP conversion factor, private consumption (LCU per international $)' ordinal='48' />
+            <column datatype='real' name='average_value_Price level ratio of PPP conversion factor (GDP) to market exchange rate' ordinal='49' />
+            <column datatype='real' name='average_value_Taxes less subsidies on products (constant LCU)' ordinal='50' />
+            <column datatype='real' name='average_value_Taxes less subsidies on products (current LCU)' ordinal='51' />
+            <column datatype='real' name='average_value_Taxes less subsidies on products (current US$)' ordinal='52' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;¤&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country Name]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>Country Name</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Country Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Country Code]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>Country Code</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_DEC alternative conversion factor (LCU per US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_DEC alternative conversion factor (LCU per US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_DEC alternative conversion factor (LCU per US$)</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Discrepancy in expenditure estimate of GDP (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Discrepancy in expenditure estimate of GDP (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Discrepancy in expenditure estimate of GDP (current LCU)</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP (constant 2010 US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP (constant 2010 US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP (constant 2010 US$)</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP (constant LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP (constant LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP (constant LCU)</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP (current LCU)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP (current US$)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP deflator (base year varies by country)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP deflator (base year varies by country)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP deflator (base year varies by country)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP growth (annual %)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP growth (annual %)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP growth (annual %)</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP per capita (constant 2010 US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP per capita (constant 2010 US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP per capita (constant 2010 US$)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP per capita (constant LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP per capita (constant LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP per capita (constant LCU)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP per capita (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP per capita (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP per capita (current LCU)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP per capita (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP per capita (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP per capita (current US$)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP per capita growth (annual %)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP per capita growth (annual %)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP per capita growth (annual %)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP per capita, PPP (constant 2017 international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP per capita, PPP (constant 2017 international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP per capita, PPP (constant 2017 international $)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP per capita, PPP (current international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP per capita, PPP (current international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP per capita, PPP (current international $)</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP, PPP (constant 2017 international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP, PPP (constant 2017 international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP, PPP (constant 2017 international $)</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP, PPP (current international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP, PPP (current international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP, PPP (current international $)</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GDP: linked series (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GDP: linked series (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GDP: linked series (current LCU)</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI (constant 2010 US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI (constant 2010 US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI (constant 2010 US$)</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI (current LCU)</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI (current US$)</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI per capita (constant 2010 US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI per capita (constant 2010 US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI per capita (constant 2010 US$)</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI per capita (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI per capita (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI per capita (current LCU)</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI per capita, Atlas method (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI per capita, Atlas method (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI per capita, Atlas method (current US$)</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI per capita, PPP (constant 2017 international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI per capita, PPP (constant 2017 international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI per capita, PPP (constant 2017 international $)</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI per capita, PPP (current international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI per capita, PPP (current international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI per capita, PPP (current international $)</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI, Atlas method (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI, Atlas method (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI, Atlas method (current US$)</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI, PPP (constant 2017 international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI, PPP (constant 2017 international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI, PPP (constant 2017 international $)</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI, PPP (current international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI, PPP (current international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI, PPP (current international $)</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_GNI: linked series (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_GNI: linked series (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_GNI: linked series (current LCU)</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross domestic savings (% of GDP)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross domestic savings (% of GDP)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross domestic savings (% of GDP)</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross domestic savings (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross domestic savings (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross domestic savings (current LCU)</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross domestic savings (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross domestic savings (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross domestic savings (current US$)</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross savings (% of GDP)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross savings (% of GDP)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross savings (% of GDP)</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross savings (% of GNI)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross savings (% of GNI)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross savings (% of GNI)</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross savings (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross savings (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross savings (current LCU)</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross savings (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross savings (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross savings (current US$)</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross value added at basic prices (GVA) (constant LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross value added at basic prices (GVA) (constant LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross value added at basic prices (GVA) (constant LCU)</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross value added at basic prices (GVA) (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross value added at basic prices (GVA) (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross value added at basic prices (GVA) (current LCU)</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Gross value added at basic prices (GVA) (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Gross value added at basic prices (GVA) (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Gross value added at basic prices (GVA) (current US$)</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Net primary income (Net income from abroad) (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Net primary income (Net income from abroad) (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Net primary income (Net income from abroad) (current LCU)</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Net primary income (Net income from abroad) (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Net primary income (Net income from abroad) (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Net primary income (Net income from abroad) (current US$)</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Net secondary income (Net current transfers from abroad) (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Net secondary income (Net current transfers from abroad) (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Net secondary income (Net current transfers from abroad) (current LCU)</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Net secondary income (Net current transfers from abroad) (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Net secondary income (Net current transfers from abroad) (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Net secondary income (Net current transfers from abroad) (current US$)</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_PPP conversion factor, GDP (LCU per international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_PPP conversion factor, GDP (LCU per international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_PPP conversion factor, GDP (LCU per international $)</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_PPP conversion factor, private consumption (LCU per international $)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_PPP conversion factor, private consumption (LCU per international $)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_PPP conversion factor, private consumption (LCU per international $)</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Price level ratio of PPP conversion factor (GDP) to market exchange rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Price level ratio of PPP conversion factor (GDP) to market exchange rate]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Price level ratio of PPP conversion factor (GDP) to market exchange rate</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Taxes less subsidies on products (constant LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Taxes less subsidies on products (constant LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Taxes less subsidies on products (constant LCU)</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Taxes less subsidies on products (current LCU)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Taxes less subsidies on products (current LCU)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Taxes less subsidies on products (current LCU)</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>average_value_Taxes less subsidies on products (current US$)</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[average_value_Taxes less subsidies on products (current US$)]</local-name>
+            <parent-name>[economy-and-growth.csv]</parent-name>
+            <remote-alias>average_value_Taxes less subsidies on products (current US$)</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Country Code]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column caption='Country Name (Growth)' datatype='string' name='[Country Name (copy)_4301058060423169]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+        <calculation class='tableau' formula='[Country Name]' />
+      </column>
+      <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <column caption='economy-and-growth.csv' datatype='table' name='[__tableau_internal_object_id__].[economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561]' role='measure' type='quantitative' />
+      <column caption='average value DEC alternative conversion factor (LCU per US$)' datatype='real' name='[average_value_DEC alternative conversion factor (LCU per US$)]' role='measure' type='quantitative' />
+      <column caption='average value Discrepancy in expenditure estimate of GDP (current LCU)' datatype='real' name='[average_value_Discrepancy in expenditure estimate of GDP (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value GDP (constant 2010 US$)' datatype='real' name='[average_value_GDP (constant 2010 US$)]' role='measure' type='quantitative' />
+      <column caption='average value GDP (constant LCU)' datatype='real' name='[average_value_GDP (constant LCU)]' role='measure' type='quantitative' />
+      <column caption='average value GDP (current LCU)' datatype='real' name='[average_value_GDP (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value GDP (current US$)' datatype='real' name='[average_value_GDP (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value GDP deflator (base year varies by country)' datatype='real' name='[average_value_GDP deflator (base year varies by country)]' role='measure' type='quantitative' />
+      <column caption='average value GDP growth (annual %)' datatype='real' name='[average_value_GDP growth (annual %)]' role='measure' type='quantitative' />
+      <column caption='average value GDP per capita (constant 2010 US$)' datatype='real' name='[average_value_GDP per capita (constant 2010 US$)]' role='measure' type='quantitative' />
+      <column caption='average value GDP per capita (constant LCU)' datatype='real' name='[average_value_GDP per capita (constant LCU)]' role='measure' type='quantitative' />
+      <column caption='average value GDP per capita (current LCU)' datatype='real' name='[average_value_GDP per capita (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value GDP per capita (current US$)' datatype='real' name='[average_value_GDP per capita (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value GDP per capita growth (annual %)' datatype='real' name='[average_value_GDP per capita growth (annual %)]' role='measure' type='quantitative' />
+      <column caption='average value GDP per capita, PPP (constant 2017 international $)' datatype='real' name='[average_value_GDP per capita, PPP (constant 2017 international $)]' role='measure' type='quantitative' />
+      <column caption='average value GDP per capita, PPP (current international $)' datatype='real' name='[average_value_GDP per capita, PPP (current international $)]' role='measure' type='quantitative' />
+      <column caption='average value GDP, PPP (constant 2017 international $)' datatype='real' name='[average_value_GDP, PPP (constant 2017 international $)]' role='measure' type='quantitative' />
+      <column caption='average value GDP, PPP (current international $)' datatype='real' name='[average_value_GDP, PPP (current international $)]' role='measure' type='quantitative' />
+      <column caption='average value GDP: linked series (current LCU)' datatype='real' name='[average_value_GDP: linked series (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value GNI (constant 2010 US$)' datatype='real' name='[average_value_GNI (constant 2010 US$)]' role='measure' type='quantitative' />
+      <column caption='average value GNI (current LCU)' datatype='real' name='[average_value_GNI (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value GNI (current US$)' datatype='real' name='[average_value_GNI (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value GNI per capita (constant 2010 US$)' datatype='real' name='[average_value_GNI per capita (constant 2010 US$)]' role='measure' type='quantitative' />
+      <column caption='average value GNI per capita (current LCU)' datatype='real' name='[average_value_GNI per capita (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value GNI per capita, Atlas method (current US$)' datatype='real' name='[average_value_GNI per capita, Atlas method (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value GNI per capita, PPP (constant 2017 international $)' datatype='real' name='[average_value_GNI per capita, PPP (constant 2017 international $)]' role='measure' type='quantitative' />
+      <column caption='average value GNI per capita, PPP (current international $)' datatype='real' name='[average_value_GNI per capita, PPP (current international $)]' role='measure' type='quantitative' />
+      <column caption='average value GNI, Atlas method (current US$)' datatype='real' name='[average_value_GNI, Atlas method (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value GNI, PPP (constant 2017 international $)' datatype='real' name='[average_value_GNI, PPP (constant 2017 international $)]' role='measure' type='quantitative' />
+      <column caption='average value GNI, PPP (current international $)' datatype='real' name='[average_value_GNI, PPP (current international $)]' role='measure' type='quantitative' />
+      <column caption='average value GNI: linked series (current LCU)' datatype='real' name='[average_value_GNI: linked series (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Gross domestic savings (% of GDP)' datatype='real' name='[average_value_Gross domestic savings (% of GDP)]' role='measure' type='quantitative' />
+      <column caption='average value Gross domestic savings (current LCU)' datatype='real' name='[average_value_Gross domestic savings (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Gross domestic savings (current US$)' datatype='real' name='[average_value_Gross domestic savings (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value Gross savings (% of GDP)' datatype='real' name='[average_value_Gross savings (% of GDP)]' role='measure' type='quantitative' />
+      <column caption='average value Gross savings (% of GNI)' datatype='real' name='[average_value_Gross savings (% of GNI)]' role='measure' type='quantitative' />
+      <column caption='average value Gross savings (current LCU)' datatype='real' name='[average_value_Gross savings (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Gross savings (current US$)' datatype='real' name='[average_value_Gross savings (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value Gross value added at basic prices (GVA) (constant LCU)' datatype='real' name='[average_value_Gross value added at basic prices (GVA) (constant LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Gross value added at basic prices (GVA) (current LCU)' datatype='real' name='[average_value_Gross value added at basic prices (GVA) (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Gross value added at basic prices (GVA) (current US$)' datatype='real' name='[average_value_Gross value added at basic prices (GVA) (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value Net primary income (Net income from abroad) (current LCU)' datatype='real' name='[average_value_Net primary income (Net income from abroad) (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Net primary income (Net income from abroad) (current US$)' datatype='real' name='[average_value_Net primary income (Net income from abroad) (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value Net secondary income (Net current transfers from abroad) (current LCU)' datatype='real' name='[average_value_Net secondary income (Net current transfers from abroad) (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Net secondary income (Net current transfers from abroad) (current US$)' datatype='real' name='[average_value_Net secondary income (Net current transfers from abroad) (current US$)]' role='measure' type='quantitative' />
+      <column caption='average value PPP conversion factor, GDP (LCU per international $)' datatype='real' name='[average_value_PPP conversion factor, GDP (LCU per international $)]' role='measure' type='quantitative' />
+      <column caption='average value PPP conversion factor, private consumption (LCU per international $)' datatype='real' name='[average_value_PPP conversion factor, private consumption (LCU per international $)]' role='measure' type='quantitative' />
+      <column caption='average value Price level ratio of PPP conversion factor (GDP) to market exchange rate' datatype='real' name='[average_value_Price level ratio of PPP conversion factor (GDP) to market exchange rate]' role='measure' type='quantitative' />
+      <column caption='average value Taxes less subsidies on products (constant LCU)' datatype='real' name='[average_value_Taxes less subsidies on products (constant LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Taxes less subsidies on products (current LCU)' datatype='real' name='[average_value_Taxes less subsidies on products (current LCU)]' role='measure' type='quantitative' />
+      <column caption='average value Taxes less subsidies on products (current US$)' datatype='real' name='[average_value_Taxes less subsidies on products (current US$)]' role='measure' type='quantitative' />
+      <column-instance column='[Country Name (copy)_4301058060423169]' derivation='None' name='[none:Country Name (copy)_4301058060423169:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Country Name:nk]' palette='purple_pink_gray_10_0' type='palette'>
+            <map to='#5fbb68'>
+              <bucket>&quot;Algeria&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Australia&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Belize&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Brunei Darussalam&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Cayman Islands&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Congo, Dem. Rep.&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Denmark&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Egypt, Arab Rep.&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Europe &amp; Central Asia (excluding high income)&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Gabon&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Hong Kong SAR, China&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Indonesia&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Jordan&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Lao PDR&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Liberia&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Madagascar&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Mexico&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Montenegro&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;New Zealand&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Oman&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Philippines&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Rwanda&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Singapore&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;South Asia (IDA &amp; IBRD)&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Sub-Saharan Africa (excluding high income)&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Thailand&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Tuvalu&quot;</bucket>
+            </map>
+            <map to='#5fbb68'>
+              <bucket>&quot;Vanuatu&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;American Samoa&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Austria&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Benin&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Bulgaria&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Central African Republic&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Congo, Rep.&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Djibouti&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;El Salvador&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Europe &amp; Central Asia (IDA &amp; IBRD countries)&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Gambia, The&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Guatemala&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Hungary&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Kazakhstan&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Late-demographic dividend&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Libya&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Malawi&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Micronesia, Fed. Sts.&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Morocco&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Nicaragua&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Other small states&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Poland&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Samoa&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Sint Maarten (Dutch part)&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;South Sudan&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Sub-Saharan Africa (IDA &amp; IBRD countries)&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Timor-Leste&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Uganda&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;Venezuela, RB&quot;</bucket>
+            </map>
+            <map to='#64cdcc'>
+              <bucket>&quot;World&quot;</bucket>
+            </map>
+            <map to='#7c7270'>
+              <bucket>&quot;United Kingdom&quot;</bucket>
+            </map>
+            <map to='#8074a8'>
+              <bucket>&quot;Brazil&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Andorra&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Azerbaijan&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Bermuda&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Burkina Faso&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Central Europe and the Baltics&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Costa Rica&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Dominica&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Equatorial Guinea&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;European Union&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Georgia&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Guinea&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;IBRD only&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Iraq&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Latin America &amp; Caribbean&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Liechtenstein&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Malaysia&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Middle East &amp; North Africa&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Mozambique&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Niger&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Pacific island small states&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Portugal&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;San Marino&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Slovak Republic&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Spain&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Sudan&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Togo&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Ukraine&quot;</bucket>
+            </map>
+            <map to='#91dcea'>
+              <bucket>&quot;Vietnam&quot;</bucket>
+            </map>
+            <map to='#9b93c9'>
+              <bucket>&quot;Italy&quot;</bucket>
+            </map>
+            <map to='#9c9290'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Angola&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Bahamas, The&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Bhutan&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Burundi&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Chad&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Cote d&apos;Ivoire&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Dominican Republic&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Eritrea&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Faroe Islands&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Guam&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Guinea-Bissau&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Iceland&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Ireland&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Latin America &amp; Caribbean (excluding high income)&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Lithuania&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Maldives&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Middle East &amp; North Africa (excluding high income)&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Myanmar&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Nigeria&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Pakistan&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Post-demographic dividend&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Sao Tome and Principe&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Slovenia&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Sri Lanka&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Suriname&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Tonga&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;United Arab Emirates&quot;</bucket>
+            </map>
+            <map to='#a4a4d5'>
+              <bucket>&quot;Virgin Islands (U.S.)&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Antigua and Barbuda&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Bahrain&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Bolivia&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Cabo Verde&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Channel Islands&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Croatia&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Early-demographic dividend&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Estonia&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Fiji&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Ghana&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Guyana&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;IDA &amp; IBRD total&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Isle of Man&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Korea, Dem. People&apos;s Rep.&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Latin America &amp; the Caribbean (IDA &amp; IBRD countries)&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Low &amp; middle income&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Mali&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Middle East &amp; North Africa (IDA &amp; IBRD countries)&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Namibia&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;North America&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Palau&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Pre-demographic dividend&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Saudi Arabia&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Small states&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;St. Kitts and Nevis&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Sweden&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;Trinidad and Tobago&quot;</bucket>
+            </map>
+            <map to='#bbc9e5'>
+              <bucket>&quot;West Bank and Gaza&quot;</bucket>
+            </map>
+            <map to='#c46487'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#c5bfbe'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#c6c1f0'>
+              <bucket>&quot;Canada&quot;</bucket>
+            </map>
+            <map to='#ddb5d5'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Afghanistan&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Arab World&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Bangladesh&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Bosnia and Herzegovina&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Chile&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Cuba&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;East Asia &amp; Pacific&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Eswatini&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Finland&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Gibraltar&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Haiti&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;IDA blend&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Israel&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Korea, Rep.&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Latvia&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Low income&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Malta&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Middle income&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Nauru&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;North Macedonia&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Panama&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Puerto Rico&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Senegal&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Solomon Islands&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;St. Lucia&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Switzerland&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Tunisia&quot;</bucket>
+            </map>
+            <map to='#eb1e2c'>
+              <bucket>&quot;Yemen, Rep.&quot;</bucket>
+            </map>
+            <map to='#f498b6'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Africa Western and Central&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Armenia&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Belarus&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Cambodia&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Colombia&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Cyprus&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;East Asia &amp; Pacific (IDA &amp; IBRD countries)&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Euro area&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;French Polynesia&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Greenland&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;High income&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;IDA total&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Jamaica&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Kuwait&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Lebanon&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Luxembourg&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Mauritania&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Monaco&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Netherlands&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Norway&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Paraguay&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Romania&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Seychelles&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;South Africa&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;St. Vincent and the Grenadines&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Tajikistan&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Turkmenistan&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Uruguay&quot;</bucket>
+            </map>
+            <map to='#f9a729'>
+              <bucket>&quot;Zambia&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Albania&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Aruba&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Belgium&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;British Virgin Islands&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Caribbean small states&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Comoros&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Czech Republic&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Ecuador&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Europe &amp; Central Asia&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Grenada&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Honduras&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Iran, Islamic Rep.&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Kiribati&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Kyrgyz Republic&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Lesotho&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Macao SAR, China&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Mauritius&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Mongolia&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;New Caledonia&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;OECD members&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Peru&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Russian Federation&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Sierra Leone&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;South Asia&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Sub-Saharan Africa&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Tanzania&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Turks and Caicos Islands&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Uzbekistan&quot;</bucket>
+            </map>
+            <map to='#f9d23c'>
+              <bucket>&quot;Zimbabwe&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Africa Eastern and Southern&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Argentina&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Barbados&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Botswana&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Cameroon&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Curacao&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;East Asia &amp; Pacific (excluding high income)&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Ethiopia&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Fragile and conflict affected situations&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Greece&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Heavily indebted poor countries (HIPC)&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;IDA only&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Kenya&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Kosovo&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Least developed countries: UN classification&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Lower middle income&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Marshall Islands&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Moldova&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Nepal&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Northern Mariana Islands&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Papua New Guinea&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Qatar&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Serbia&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Somalia&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;St. Martin (French part)&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Syrian Arab Republic&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Turkey&quot;</bucket>
+            </map>
+            <map to='#fd6f30'>
+              <bucket>&quot;Upper middle income&quot;</bucket>
+            </map>
+            <map to='#ffbed1'>
+              <bucket>&quot;France&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Country Name (copy)_4301058060423169:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;United States&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;India&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;World&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;Germany&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;China&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;Japan&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='economy-and-growth.csv' id='economy-and-growth.csv_5475C64575D3402AA2BC2BB21D7DB561'>
+            <properties context=''>
+              <relation connection='textscan.10as75c1jx39fa1cki7ra1rtiuli' name='economy-and-growth.csv' table='[economy-and-growth#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en' separator=','>
+                  <column datatype='string' name='Country Name' ordinal='0' />
+                  <column datatype='string' name='Country Code' ordinal='1' />
+                  <column datatype='integer' name='Year' ordinal='2' />
+                  <column datatype='real' name='average_value_DEC alternative conversion factor (LCU per US$)' ordinal='3' />
+                  <column datatype='real' name='average_value_Discrepancy in expenditure estimate of GDP (current LCU)' ordinal='4' />
+                  <column datatype='real' name='average_value_GDP (constant 2010 US$)' ordinal='5' />
+                  <column datatype='real' name='average_value_GDP (constant LCU)' ordinal='6' />
+                  <column datatype='real' name='average_value_GDP (current LCU)' ordinal='7' />
+                  <column datatype='real' name='average_value_GDP (current US$)' ordinal='8' />
+                  <column datatype='real' name='average_value_GDP deflator (base year varies by country)' ordinal='9' />
+                  <column datatype='real' name='average_value_GDP growth (annual %)' ordinal='10' />
+                  <column datatype='real' name='average_value_GDP per capita (constant 2010 US$)' ordinal='11' />
+                  <column datatype='real' name='average_value_GDP per capita (constant LCU)' ordinal='12' />
+                  <column datatype='real' name='average_value_GDP per capita (current LCU)' ordinal='13' />
+                  <column datatype='real' name='average_value_GDP per capita (current US$)' ordinal='14' />
+                  <column datatype='real' name='average_value_GDP per capita growth (annual %)' ordinal='15' />
+                  <column datatype='real' name='average_value_GDP per capita, PPP (constant 2017 international $)' ordinal='16' />
+                  <column datatype='real' name='average_value_GDP per capita, PPP (current international $)' ordinal='17' />
+                  <column datatype='real' name='average_value_GDP, PPP (constant 2017 international $)' ordinal='18' />
+                  <column datatype='real' name='average_value_GDP, PPP (current international $)' ordinal='19' />
+                  <column datatype='real' name='average_value_GDP: linked series (current LCU)' ordinal='20' />
+                  <column datatype='real' name='average_value_GNI (constant 2010 US$)' ordinal='21' />
+                  <column datatype='real' name='average_value_GNI (current LCU)' ordinal='22' />
+                  <column datatype='real' name='average_value_GNI (current US$)' ordinal='23' />
+                  <column datatype='real' name='average_value_GNI per capita (constant 2010 US$)' ordinal='24' />
+                  <column datatype='real' name='average_value_GNI per capita (current LCU)' ordinal='25' />
+                  <column datatype='real' name='average_value_GNI per capita, Atlas method (current US$)' ordinal='26' />
+                  <column datatype='real' name='average_value_GNI per capita, PPP (constant 2017 international $)' ordinal='27' />
+                  <column datatype='real' name='average_value_GNI per capita, PPP (current international $)' ordinal='28' />
+                  <column datatype='real' name='average_value_GNI, Atlas method (current US$)' ordinal='29' />
+                  <column datatype='real' name='average_value_GNI, PPP (constant 2017 international $)' ordinal='30' />
+                  <column datatype='real' name='average_value_GNI, PPP (current international $)' ordinal='31' />
+                  <column datatype='real' name='average_value_GNI: linked series (current LCU)' ordinal='32' />
+                  <column datatype='real' name='average_value_Gross domestic savings (% of GDP)' ordinal='33' />
+                  <column datatype='real' name='average_value_Gross domestic savings (current LCU)' ordinal='34' />
+                  <column datatype='real' name='average_value_Gross domestic savings (current US$)' ordinal='35' />
+                  <column datatype='real' name='average_value_Gross savings (% of GDP)' ordinal='36' />
+                  <column datatype='real' name='average_value_Gross savings (% of GNI)' ordinal='37' />
+                  <column datatype='real' name='average_value_Gross savings (current LCU)' ordinal='38' />
+                  <column datatype='real' name='average_value_Gross savings (current US$)' ordinal='39' />
+                  <column datatype='real' name='average_value_Gross value added at basic prices (GVA) (constant LCU)' ordinal='40' />
+                  <column datatype='real' name='average_value_Gross value added at basic prices (GVA) (current LCU)' ordinal='41' />
+                  <column datatype='real' name='average_value_Gross value added at basic prices (GVA) (current US$)' ordinal='42' />
+                  <column datatype='real' name='average_value_Net primary income (Net income from abroad) (current LCU)' ordinal='43' />
+                  <column datatype='real' name='average_value_Net primary income (Net income from abroad) (current US$)' ordinal='44' />
+                  <column datatype='real' name='average_value_Net secondary income (Net current transfers from abroad) (current LCU)' ordinal='45' />
+                  <column datatype='real' name='average_value_Net secondary income (Net current transfers from abroad) (current US$)' ordinal='46' />
+                  <column datatype='real' name='average_value_PPP conversion factor, GDP (LCU per international $)' ordinal='47' />
+                  <column datatype='real' name='average_value_PPP conversion factor, private consumption (LCU per international $)' ordinal='48' />
+                  <column datatype='real' name='average_value_Price level ratio of PPP conversion factor (GDP) to market exchange rate' ordinal='49' />
+                  <column datatype='real' name='average_value_Taxes less subsidies on products (constant LCU)' ordinal='50' />
+                  <column datatype='real' name='average_value_Taxes less subsidies on products (current LCU)' ordinal='51' />
+                  <column datatype='real' name='average_value_Taxes less subsidies on products (current US$)' ordinal='52' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_071B51AA2E234199A9FD89BA6921848C]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Growth' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Country Name (Growth)' />
+        <param name='target' value='Growth' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Growth'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#e15759'>World GDP Trend is Upward</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='economy-and-growth' name='federated.1kfaei81wahhe215cybph1actj5o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kfaei81wahhe215cybph1actj5o'>
+            <column caption='Country Name (Growth)' datatype='string' name='[Country Name (copy)_4301058060423169]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal'>
+              <calculation class='tableau' formula='[Country Name]' />
+            </column>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column caption='average value GDP (current US$)' datatype='real' name='[average_value_GDP (current US$)]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name (copy)_4301058060423169]' derivation='None' name='[none:Country Name (copy)_4301058060423169:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_value_GDP (current US$)]' derivation='Sum' name='[sum:average_value_GDP (current US$):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name (copy)_4301058060423169:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country Name (copy)_4301058060423169:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:Country Name (copy)_4301058060423169:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country Name (copy)_4301058060423169:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:Country Name (copy)_4301058060423169:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:Country Name (copy)_4301058060423169:nk]' member='&quot;United States&quot;' />
+              <groupfilter function='member' level='[none:Country Name (copy)_4301058060423169:nk]' member='&quot;World&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name (copy)_4301058060423169:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='legend-title-text'>
+            <format attr='color' field='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name (copy)_4301058060423169:nk]' value='Country Name'>
+              <formatted-text>
+                <run>Country Name</run>
+              </formatted-text>
+            </format>
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name (copy)_4301058060423169:nk]' />
+              <text column='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name (copy)_4301058060423169:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='881' />
+                <format attr='maxwidth' value='881' />
+                <format attr='minheight' value='1103' />
+                <format attr='maxheight' value='1103' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='881' />
+                <format attr='maxwidth' value='881' />
+                <format attr='minheight' value='1103' />
+                <format attr='maxheight' value='1103' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</rows>
+        <cols>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name (copy)_4301058060423169:nk]</field>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Germany&quot;</value>
+                <value>2019</value>
+                <value>3861123558039.21</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-26' y='6' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{B16AA6C2-0EB4-49F9-934A-618CEBA9DA31}' />
+    </worksheet>
+    <worksheet name='Maturity'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#4e79a7'>World GDP is in the Maturity</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='economy-and-growth' name='federated.1kfaei81wahhe215cybph1actj5o' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1kfaei81wahhe215cybph1actj5o'>
+            <column datatype='string' name='[Country Name]' role='dimension' semantic-role='[Country].[ISO3166_2]' type='nominal' />
+            <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+            <column caption='average value GDP (current US$)' datatype='real' name='[average_value_GDP (current US$)]' role='measure' type='quantitative' />
+            <column-instance column='[Country Name]' derivation='None' name='[none:Country Name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Year]' derivation='None' name='[none:Year:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[average_value_GDP (current US$)]' derivation='Sum' name='[sum:average_value_GDP (current US$):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]'>
+            <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;Brazil&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;Canada&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;China&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;France&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;Germany&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;India&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;Italy&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;Japan&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;United Kingdom&quot;' />
+              <groupfilter function='member' level='[none:Country Name:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]' field-type='quantitative' max='40000000000000.0' min='1000000000000.0' range-type='fixed' scale='log' scope='rows' type='space' />
+            <encoding attr='space' class='0' field='[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]' field-type='quantitative' max='2019' min='2015' range-type='fixed' scope='cols' type='space' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]' value='e0.0e+00' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]' />
+              <text column='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='881' />
+                <format attr='maxwidth' value='881' />
+                <format attr='minheight' value='1103' />
+                <format attr='maxheight' value='1103' />
+                <format attr='aspect' value='0' />
+                <format attr='minwidth' value='881' />
+                <format attr='maxwidth' value='881' />
+                <format attr='minheight' value='1103' />
+                <format attr='maxheight' value='1103' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</rows>
+        <cols>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]</field>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;Brazil&quot;</value>
+                <value>2019</value>
+                <value>1877810514260.3601</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-16' y='8' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]</field>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United Kingdom&quot;</value>
+                <value>2020</value>
+                <value>2707743777173.9102</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-46' y='26' />
+          </mark-label>
+          <mark-label id='2'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]</field>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+                  <field>[federated.1kfaei81wahhe215cybph1actj5o].[sum:average_value_GDP (current US$):qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;United Kingdom&quot;</value>
+                <value>2019</value>
+                <value>2830813507746.8701</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-115' y='12' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{B03D9DA3-460A-4C01-81B6-A21600E1750D}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' name='Maturity'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]</field>
+            <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A780C4E2-707D-484C-A1C5-D21B1DC5A5DB}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Growth'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name (copy)_4301058060423169:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Country Name:nk]</field>
+            <field>[federated.1kfaei81wahhe215cybph1actj5o].[none:Year:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{926207B9-DAE1-4F0C-9BB8-C197948ED003}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Growth' width='192'>
+      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
+      RK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Maturity' width='192'>
+      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
+      gg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
